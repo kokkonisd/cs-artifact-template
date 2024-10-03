@@ -1,0 +1,4 @@
+bron -> brown
+jmped -> jumped
+oer -> over
+lazzy -> lazy
