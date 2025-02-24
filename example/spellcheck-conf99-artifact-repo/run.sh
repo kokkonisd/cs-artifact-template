@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Run a Docker container with the Spellcheck CONF'YY artifact image.
+## Run a Docker container with the Spellcheck CONF'99 artifact image.
 ## The name of the Docker image is specified by the IMAGE file.
 ## The version of the Docker image is specified by the VERSION file.
 

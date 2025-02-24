@@ -1,10 +1,14 @@
 # Spellcheck: Checking New Spells
 
 ## About
-TODO
+Spellcheck is a novel spell checking approach, based on the `similar-word-finder` framework.
 
 ## Installation
-TODO
+After installing a [Python 3 interpeter](https://www.python.org/downloads/) (3.8 or newer), clone
+this repository and run the Spellcheck tool via:
+```console
+$ python3 spellcheck.py WORDLIST FILE [FILE ...]
+```
 
 ## Contributing
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md).
