@@ -12,14 +12,16 @@ import subprocess
 import sys
 
 
-TOOL = os.path.join("/root", "tool", "spellcheck.py")
-GROUND_TRUTH = os.path.join("/root", "benchmarks", "ground-truth")
+SPELLCHECK = os.path.join("/root", "spellcheck", "spellcheck.py")
+GROUND_TRUTH = os.path.join("/root", "artifact", "benchmarks", "ground-truth")
 
 
 def run(benchmark: str, wordlist: str) -> list[list[str]]:
     """Run a specific benchmark with an associated wordlist."""
     result = subprocess.run(
-        [sys.executable, TOOL, wordlist, benchmark], capture_output=True, text=True
+        [sys.executable, SPELLCHECK, wordlist, benchmark],
+        capture_output=True,
+        text=True,
     ).stdout.rstrip()
 
     return [pair.split(" -> ") for pair in result.split("\n")]
@@ -115,7 +117,7 @@ def main() -> None:
             + "\n"
         )
 
-    print("Done!", file=sys.stderr)
+    print(f"Done! The results can be found in '{benchmark_file}'.", file=sys.stderr)
 
 
 if __name__ == "__main__":

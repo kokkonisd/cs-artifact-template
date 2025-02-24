@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 Implement a naive spellchecker.
 """
@@ -10,8 +8,8 @@ import subprocess
 import sys
 from typing import Optional
 
-MOST_SIMILAR_WORD_PROGRAM = os.path.join(
-    "/root", "external-dependency", "similar_word.py"
+SIMILAR_WORD_FINDER = os.path.join(
+    "/root", "spellcheck", "similar-word-finder", "similar-word-finder.py"
 )
 
 
@@ -33,7 +31,7 @@ def spell_check(
         correct_word = subprocess.run(
             [
                 sys.executable,
-                MOST_SIMILAR_WORD_PROGRAM,
+                SIMILAR_WORD_FINDER,
                 actual_word.lower(),
                 wordlist_file,
             ],

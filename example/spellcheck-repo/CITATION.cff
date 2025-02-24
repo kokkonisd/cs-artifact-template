@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: spellcheck
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jane
+    family-names: Doe
+    email: jane.doe@example.com
+    affiliation: Some University
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+identifiers:
+  - type: swh
+    value: 'swh:1:rev:deadc0dedeadc0dedeadc0dedeadc0dedeadc0de'
+    description: >-
+      Archived version of this repository on Software
+      Heritage
+  - type: doi
+    value: 10.1234/zenodo.4321
+    description: >-
+      Artifact for the paper "Spellcheck: Checking New
+      Spells"
+repository-code: 'https://github.com/jane.doe/spellcheck'
+abstract: Lorem ipsum
+keywords:
+  - spell-checking
+license: LGPL-2.1
+version: 0.1.0
+date-released: '2025-02-24'

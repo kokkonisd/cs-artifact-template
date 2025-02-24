@@ -1,0 +1,6 @@
+[book]
+authors = ["Dimitri Kokkonis"]
+language = "en"
+multilingual = false
+src = "src"
+title = "CS artifact template"
