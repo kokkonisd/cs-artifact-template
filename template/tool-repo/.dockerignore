@@ -1,0 +1,6 @@
+/.dockerignore
+/build.sh
+/run.sh
+/IMAGE
+/Dockerfile
+/.git*
