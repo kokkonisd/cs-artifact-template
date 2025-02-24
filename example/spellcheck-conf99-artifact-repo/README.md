@@ -36,7 +36,7 @@ The image can be loaded transparently via [Docker Hub](https://hub.docker.com):
 ```console
 $ docker pull spellcheck-conf99-artifact:0.1.0
 ```
-As a more durable alterntive, it can also be downloaded from the Zenodo archive and then loaded
+As a more durable alternative, it can also be downloaded from the Zenodo archive and then loaded
 locally. For example, using [curl](https://curl.se/):
 ```console
 $ curl https://zenodo.org/records/00000000/files/spellcheck-docker-image_0-1-0.tar | docker load

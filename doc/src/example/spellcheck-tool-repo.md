@@ -3,7 +3,7 @@ The repository for the `spellcheck` tool can be found under `example/spellcheck-
 
 The _Spellcheck_ approach is implemented here in the form of a Python script, `spellcheck.py`. It
 has an external dependency on another tool, called `similar-word-finder` (found under the directory
-with the same name). Such dependency can be materialized in many ways; for example, if
+with the same name). Such a dependency can be materialized in many ways; for example, if
 `similar-word-finder` has its own public repository, it can be "linked" to this repository via a
 [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules), conveniently pinning its
 version down to the exact commit ID.
@@ -13,9 +13,10 @@ version down to the exact commit ID.
 The following essential files are present in the repository:
 - `README.md`. It gives a short explanation of the approach and tool, listing the dependencies
   needed in order to install and use it. It also links to the contributing guide (see
-  `CONTRIBUTING.md` below) and provides a citation for other papers (see `CITATION.cff` below).
+  `CONTRIBUTING.md` below) and provides a citation for other papers to use (see `CITATION.cff`
+  below).
 - `AUTHORS`. It contains a simple list of authors and their emails. In this case, there is a single
-  autor: Jane Doe.
+  author: Jane Doe.
 - `LICENSE`. It contains the license of the tool. In this case, it is the
   [LGPL-2.1](https://opensource.org/license/lgpl-2-1).
 - `CITATION.cff`. It contains metadata that can help cite this repository. See
@@ -38,9 +39,9 @@ The image can be built locally with the `build.sh` utility script, provided that
 installed on the machine. A container using the previously built image can then be started via the
 `run.sh` script.
 
-These two scripts make use of the `IMAGE` and `VERSION` files. The `IMAGE` file contains (and
-defines) the name of the generated image (in this case, `spellcheck`), while `VERSION` contains
-(and defines) its version number. See [_Versioning_](#versioning) below for more details.
+These two scripts make use of the `IMAGE` and `VERSION` files. The `IMAGE` file defines the name of
+the generated image (in this case, `spellcheck`), while `VERSION` defines its version number. See
+[_Versioning_](#versioning) below for more details.
 
 Finally, the `Dockerfile` and `.dockerignore` determine how the image gets built. See
 <https://docs.docker.com/reference/dockerfile/> for a detailed description of these files.
@@ -57,6 +58,6 @@ common in research). In this case, since the example is very simple, there is a 
 [Semantic Versioning](https://semver.org/) is used (in tandem with Git) for the versioning of
 Spellcheck. Concretely, Spellcheck versions will materialize through [Git
 tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging) and updates to the `VERSION` file. This
-makes reproducing specific versions of Spellcheck (such as the one used in the fictional paper)
-easier, and citations to the repository/tool can specify the version to avoid ambiguities, as
-Spellcheck evolves.
+makes reproducing results using specific versions of Spellcheck (such as the one used in the
+fictional paper) easier, and citations to the repository/tool can specify the version to avoid
+ambiguities, as Spellcheck evolves.

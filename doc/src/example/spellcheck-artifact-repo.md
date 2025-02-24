@@ -15,7 +15,7 @@ that, as you can see in the `Dockerfile`, the image of the artifact is based on 
 tool from the _tool_ repository. This helps to both (1) pin the version of Spellcheck and (2) reuse
 the Spellcheck Docker image, but it is not strictly necessary&mdash;we could also use [Git
 submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), but we would probably have to
-partially reimplement the dependency installation and setup done in the Spellcheck _tool_
+partially re-implement the dependency installation and setup done in the Spellcheck _tool_
 repository. Also see [_A note on stacking Docker
 images_](../template/building/stacking-docker-images.md) for more details.
 

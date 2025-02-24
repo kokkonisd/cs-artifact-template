@@ -8,4 +8,4 @@
 set -e
 
 
-docker run -ti --rm --name spellcheck-confYY-artifact "$(cat IMAGE):$(cat VERSION)"
+docker run -ti --rm --name spellcheck-conf99-artifact "$(cat IMAGE):$(cat VERSION)"

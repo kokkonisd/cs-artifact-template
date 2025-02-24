@@ -11,5 +11,5 @@ The documentation is divided into the following sections:
   template;
 - [_A simple example_](./example.md): walk-through of a concrete example of an artifact using the
   template;
-- [_Using the template_](./template.md): a detailed technical guide on using the template for your
-  own artifacts.
+- [_The artifact template in detail_](./template.md): a detailed technical guide on using the
+  template for your own artifacts.

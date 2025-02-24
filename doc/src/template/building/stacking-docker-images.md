@@ -29,7 +29,7 @@ For example, if it needs to install system packages, they will not be installed 
 as the last `FROM` command will essentially overwrite the installation with its own installation of
 system packages.
 
-One way to get around that, is to copy _everything_ from the previous image(s) like so:
+One way to get around that is to copy _everything_ from the previous image(s) like so:
 ```dockerfile
 FROM external-dependency/tool:0.1.0 AS dependency
 FROM my-tool:0.1.0
