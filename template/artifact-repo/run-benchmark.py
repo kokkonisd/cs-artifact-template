@@ -23,7 +23,7 @@ def main() -> None:
     args = parser.parse_args()
 
     print(
-        f"Running benchmark '{args.benchmark}' with wordlist '{args.wordlist}'...",
+        f"Running benchmark '{args.benchmark}'...",
         file=sys.stderr,
     )
 
