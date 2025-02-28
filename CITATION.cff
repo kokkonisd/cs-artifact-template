@@ -11,7 +11,7 @@ authors:
     orcid: 'https://orcid.org/0009-0009-5171-2992'
 identifiers:
   - type: swh
-    value: 'swh:1:dir:ec300dbe844f7b29ce68ba276c6c01deb50c3725'
+    value: 'swh:1:dir:aae4c6cb442895efdb9e53921c410ce52ef677c5'
 repository-code: 'https://github.com/kokkonisd/cs-artifact-template'
 url: 'https://kokkonisd.github.io/cs-artifact-template'
 abstract: >-
@@ -23,6 +23,4 @@ keywords:
   - artifact
   - computer-science
 license: CC-BY-SA-4.0
-commit: 43ce4968779cf1531f9acfdea913da789a65615d
-version: 0.1.0
-date-released: '2025-02-24'
+version: 0.1.1
