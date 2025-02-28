@@ -1,21 +1,27 @@
 # Spellcheck: Checking New Spells
 
 ## About
+
 Spellcheck is a novel spell checking approach, based on the `similar-word-finder` framework.
 
 ## Installation
+
 After installing a [Python 3 interpreter](https://www.python.org/downloads/) (3.8 or newer), clone
 this repository and run the Spellcheck tool via:
+
 ```console
 $ python3 spellcheck.py WORDLIST FILE [FILE ...]
 ```
 
 ## Contributing
+
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Citing this repo
+
 If you use this software, please cite it, using the metadata in [CITATION.cff](./CITATION.cff), or
 the following BibTeX snippet:
+
 ```bibtex
 @software{spellcheck-repo,
     author = {Jane Doe},

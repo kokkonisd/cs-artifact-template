@@ -1,4 +1,5 @@
 # Portability
+
 To ensure portability and ease the setup of the evaluation environment, this template makes heavy
 use of [Docker](https://www.docker.com/). Of course, this can be swapped out for any other such
 tool, so long as the artifact remains reasonably portable between different platforms and

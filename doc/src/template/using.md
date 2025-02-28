@@ -1,10 +1,13 @@
 # Using the artifact
+
 As established in the previous sections, a big advantage of setting up your artifact in this way is
 that you can both use the artifact to _produce_ the results of your paper and give it to artifact
 evaluators to _reproduce_ the results.
 
 ## Producing the results for a paper
+
 ### Storing the results and producing data for the paper
+
 When producing results for a paper, it is a good idea to be able to **store the raw results**
 instead of storing **metrics _about_ the results**. For example, you can store the true/false
 positive/negative rates of an experiment and throw away everything else to save space; however, if
@@ -31,12 +34,13 @@ can now be easily packaged with the artifact on an archival repository (e.g., on
 even better means to other researchers of reproducing your results.
 
 ### Running experiments in Docker containers
+
 When using Docker containers, it is a good idea to auto-remove them when done by running them with
-the `--rm` option. However, a crash might cause all data in the container to be lost (in some
-cases, it can be multiple hours or even days worth of data). For that reason, it is a good practice
-to _bind mount a volume_ to the container, essentially mapping a directory on the host
-machine to a directory in the container. This can be achieved through the `--volume` option, like
-so:
+the `--rm` option. However, a crash might cause all data in the container to be lost (in some cases,
+it can be multiple hours or even days worth of data). For that reason, it is a good practice to
+_bind mount a volume_ to the container, essentially mapping a directory on the host machine to a
+directory in the container. This can be achieved through the `--volume` option, like so:
+
 ```console
 $ docker run -ti --rm --volume /path/to/host-dir:/path/to/container-dir
 ```
@@ -46,15 +50,15 @@ container, and direct _all_ output of the experiment in the container in `/root/
 even in the event of a crash, we will be able to save whatever data has been produced up until the
 crash.
 
-Another benefit of this use of containers is that they are less likely to run out of space. As
-their "default" space is commonly placed on a shared volume on the host machines, on machines that
-see heavy Docker container usage across multiple users, you run the risk of running out of space on
-the shared volume (which might ruin an experiment). By using a bind mount as described before, you
+Another benefit of this use of containers is that they are less likely to run out of space. As their
+"default" space is commonly placed on a shared volume on the host machines, on machines that see
+heavy Docker container usage across multiple users, you run the risk of running out of space on the
+shared volume (which might ruin an experiment). By using a bind mount as described before, you
 ensure that the directory containing the largest and most important data from your experiment will
 not also be used by other running containers.
 
-
 ## Providing an reproduction environment for other researchers
+
 The same artifact can be used by other researchers (e.g., in the context of artifact evaluation) to
 reproduce the results of the paper easily and in some cases even accurately down to the bit level.
 Since the very same environment was used to produce the results in the first place, we can be very

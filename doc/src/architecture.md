@@ -1,11 +1,14 @@
 # Architecture
+
 The goals of this artifact template are to produce an artifact which can:
-1. Be used to both _produce_ (by yourself) and _reproduce_ (by others) experimental results
-   for/from the associated paper;
-2. Be used by others just like any piece of software (if applicable), in various contexts
-   (such as research&mdash;e.g., other papers, or industry).
+
+1. Be used to both _produce_ (by yourself) and _reproduce_ (by others) experimental results for/from
+   the associated paper;
+2. Be used by others just like any piece of software (if applicable), in various contexts (such as
+   research—e.g., other papers, or industry).
 
 As such, this template proposes to split the work into two repositories:
+
 - The **tool** repository, containing the software itself, to be independently maintained and
   distributed as needed;
 - The **artifact** repository, building on the _tool_ repository, but also adding any additional
