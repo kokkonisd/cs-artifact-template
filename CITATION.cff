@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: CS artifact template
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Dimitri
+    family-names: Kokkonis
+    email: kokkonisd@gmail.com
+    orcid: 'https://orcid.org/0009-0009-5171-2992'
+identifiers:
+  - type: swh
+    value: 'swh:1:dir:ec300dbe844f7b29ce68ba276c6c01deb50c3725'
+repository-code: 'https://github.com/kokkonisd/cs-artifact-template'
+url: 'https://kokkonisd.github.io/cs-artifact-template'
+abstract: >-
+  A simple template for an artifact in the form of a Docker
+  image, to accompany a scientific paper. It's tailored for
+  typical Computer Science artifacts, but can potentially
+  serve as a basis for other types of artifacts.
+keywords:
+  - artifact
+  - computer-science
+license: CC-BY-SA-4.0
+commit: 43ce4968779cf1531f9acfdea913da789a65615d
+version: 0.1.0
+date-released: '2025-02-24'
