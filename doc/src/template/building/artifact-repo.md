@@ -37,6 +37,13 @@ You should delete the contents of this file and replace them with the name of th
 your artifact. This should most likely just be `<tool_name>-<conf_name>-artifact`. For example,
 `spellcheck-conf99-artifact`.
 
+## `LICENSE`
+
+You should delete the contents of this file and replace them with an actual license, preferably an
+[open source](https://opensource.org/licenses) license. If you are using something which uses a
+different license (e.g., a dataset), make sure to explain that it does not fall under the same
+license as the rest of the repo (also checking for potential conflicts).
+
 ## `README.md`
 
 In the first heading, on the first line, you should replace `TODO`s with the name of the associated
