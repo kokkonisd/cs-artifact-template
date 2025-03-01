@@ -11,7 +11,7 @@ authors:
     orcid: 'https://orcid.org/0009-0009-5171-2992'
 identifiers:
   - type: swh
-    value: 'swh:1:dir:aae4c6cb442895efdb9e53921c410ce52ef677c5'
+    value: 'swh:1:rel:a8906a178128585acb48b0a508a3cb329ca352f7'
 repository-code: 'https://github.com/kokkonisd/cs-artifact-template'
 url: 'https://kokkonisd.github.io/cs-artifact-template'
 abstract: >-
