@@ -57,7 +57,7 @@ shared volume (which might ruin an experiment). By using a bind mount as describ
 ensure that the directory containing the largest and most important data from your experiment will
 not also be used by other running containers.
 
-## Providing an reproduction environment for other researchers
+## Providing a reproduction environment for other researchers
 
 The same artifact can be used by other researchers (e.g., in the context of artifact evaluation) to
 reproduce the results of the paper easily and in some cases even accurately down to the bit level.
